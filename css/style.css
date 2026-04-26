@@ -240,15 +240,13 @@ a:hover {
     text-transform: uppercase;
 }
 
-/*** Facts ***/
-.fact-item {
-    border: 1px solid var(--border);
-    transition: .3s;
+.fact-item:hover {
+    transform: none;
+    box-shadow: none;
 }
 
-.fact-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(40,54,141,.08);
+.fact-item:hover .fact-icon {
+    background: var(--primary); /* mantém a cor original */
 }
 
 .fact-item .fact-icon {
@@ -474,7 +472,7 @@ a:hover {
 
 .btn-whatsapp-card{
     display:inline-block;
-    background:#0d6efd;
+    background:var(--primary);
     color:#ffffff !important;
     text-decoration:none !important;
     padding:12px 28px;
@@ -485,24 +483,56 @@ a:hover {
     white-space:nowrap;
     border:none;
     box-shadow:none;
-    transition:none !important;
-    transform:none !important;
+    transition:none; /* sem animação */
     margin-top:15px;
 }
 
+/* hover SEM mudar cor */
 .btn-whatsapp-card:hover,
 .btn-whatsapp-card:focus,
 .btn-whatsapp-card:active{
-    background:#0d6efd;
+    background:var(--primary); /* mantém igual */
     color:#ffffff !important;
     text-decoration:none !important;
     box-shadow:none;
-    transform:none !important;
-    transition:none !important;
+    transform:none;
 }
 
 /* impede quebra */
 .service-text .btn-whatsapp-card{
     width:auto;
     min-width:170px;
+}
+
+/* REMOVE QUALQUER EFEITO DE HOVER DO CARD */
+.fact-item:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* REMOVE MUDANÇA DO ÍCONE NO HOVER */
+.fact-item:hover .fact-icon {
+    background: var(--primary) !important;
+}
+
+/* GARANTE QUE O ÍCONE FIQUE SEMPRE IGUAL */
+.fact-item .fact-icon {
+    background: var(--primary) !important;
+    transition: none !important;
+}
+
+/* REMOVE QUALQUER TRANSIÇÃO DO CARD */
+.fact-item {
+    transition: none !important;
+}
+
+.btn-whatsapp,
+.btn-whatsapp:hover,
+.btn-whatsapp:focus,
+.btn-whatsapp:active {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: #fff;
+    box-shadow: none;
+    transform: none;
 }
