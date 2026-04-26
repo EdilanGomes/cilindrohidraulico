@@ -551,3 +551,63 @@ h6,
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+/*** SERVICE - imagem sempre visível + hover escurecendo ***/
+
+.service-item{
+    overflow: hidden;
+    position: relative;
+}
+
+.service-item .bg-img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 1;
+    transform: scale(1);
+    transition: .5s;
+}
+
+/* camada inicial */
+.service-item::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    z-index: 2;
+    transition: .5s;
+}
+
+/* conteúdo acima da imagem */
+.service-item .service-text{
+    position: relative;
+    z-index: 3;
+    background: transparent !important;
+    color: #fff;
+}
+
+.service-item h3,
+.service-item p,
+.service-item i,
+.service-item a{
+    color: #fff !important;
+}
+
+/* botão */
+.service-item .btn{
+    background: rgba(255,255,255,.15);
+    border: 1px solid rgba(255,255,255,.25);
+    backdrop-filter: blur(3px);
+}
+
+/* hover escurecendo */
+.service-item:hover .bg-img{
+    transform: scale(1.05);
+}
+
+.service-item:hover::before{
+    background: rgba(0,0,0,.55);
+}
