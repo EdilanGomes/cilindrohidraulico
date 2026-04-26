@@ -592,3 +592,26 @@ a:hover {
 .navbar .btn {
     border-radius: 10px;
 }
+
+/* =========================
+   BANNER RESPONSIVO
+========================= */
+
+/* Desktop padrão */
+.banner-mobile {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .banner-desktop {
+        display: none;
+    }
+
+    .banner-mobile {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
