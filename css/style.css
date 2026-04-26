@@ -540,3 +540,55 @@ a:hover {
 .fact-icon img {
     filter: brightness(0) invert(1);
 }
+
+/* =========================
+   BORDAS ARREDONDADAS GLOBAIS
+========================= */
+
+/* Botões */
+.btn,
+.btn-primary,
+.btn-whatsapp,
+.btn-whatsapp-card {
+    border-radius: 10px !important;
+}
+
+/* Cards (serviços / produtos) */
+.service-item {
+    border-radius: 16px;
+}
+
+/* Imagem dentro do card */
+.service-item .bg-img {
+    border-radius: 16px;
+}
+
+/* Overlay acompanha o arredondamento */
+.service-item::before {
+    border-radius: 16px;
+}
+
+/* Conteúdo do card */
+.service-item .service-text {
+    border-radius: 16px;
+}
+
+/* Cards de vantagens */
+.fact-item {
+    border-radius: 16px;
+}
+
+/* Ícone redondo (mantém redondo, mas suaviza borda) */
+.fact-item .fact-icon {
+    border-radius: 50%;
+}
+
+/* Footer botão */
+.footer .btn {
+    border-radius: 10px;
+}
+
+/* Navbar botão */
+.navbar .btn {
+    border-radius: 10px;
+}
