@@ -536,3 +536,7 @@ a:hover {
     box-shadow: none;
     transform: none;
 }
+
+.fact-icon img {
+    filter: brightness(0) invert(1);
+}
