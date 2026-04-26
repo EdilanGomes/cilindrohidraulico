@@ -615,3 +615,15 @@ a:hover {
         object-fit: cover;
     }
 }
+
+/* imagem padrão (desktop) */
+.banner-img {
+    content: url('../img/bannerfull.png');
+}
+
+/* troca no mobile */
+@media (max-width: 768px) {
+    .banner-img {
+        content: url('../img/banner-mobile.png');
+    }
+}
