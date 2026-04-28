@@ -624,6 +624,6 @@ a:hover {
 /* troca no mobile */
 @media (max-width: 768px) {
     .banner-img {
-        content: url('../img/banner-mo0bile2.png');
+        content: url('../img/banner-mo0bile3.png');
     }
 }
