@@ -170,7 +170,7 @@ a:hover {
     inset: 0;
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, rgba(15,23,42,.78), rgba(40,54,141,.45));
+    background: transparent;
 }
 
 .header-carousel h1,
