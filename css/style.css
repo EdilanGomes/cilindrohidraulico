@@ -618,12 +618,12 @@ a:hover {
 
 /* imagem padrão (desktop) */
 .banner-img {
-    content: url('../img/bannerfull3.png');
+    content: url('../img/bannerdecomputador.png');
 }
 
 /* troca no mobile */
 @media (max-width: 768px) {
     .banner-img {
-        content: url('../img/banner-mo0bile3.png');
+        content: url('../img/bannerdecelular.png');
     }
 }
