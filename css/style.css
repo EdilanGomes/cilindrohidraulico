@@ -627,3 +627,9 @@ a:hover {
         content: url('../img/bannerdecelular.png');
     }
 }
+
+.logo-site{
+    height:70px;
+    width:auto;
+    object-fit:contain;
+}
