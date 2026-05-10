@@ -624,7 +624,7 @@ a:hover {
 /* troca no mobile */
 @media (max-width: 768px) {
     .banner-img {
-        content: url('../img/bannerdecelular.png');
+        content: url('../img/bannercilindroCL.png');
     }
 }
 
